@@ -1,1 +1,709 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CodeWithVamp | OSINT Toolkit</title><style>:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#080b16;color:#eef1ff;font:15px system-ui,Segoe UI,Arial}.wrap{max-width:1200px;margin:auto;padding:36px 20px}header{padding:30px 0 18px}h1{font-size:clamp(30px,5vw,52px);margin:8px 0;background:linear-gradient(90deg,#ff4caa,#7f8cff);background-clip:text;color:transparent}p{color:#aeb7d0;line-height:1.55}.eyebrow{letter-spacing:.22em;color:#ff67bd;font-weight:700}.controls{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}input,select{background:#141a30;color:#fff;border:1px solid #303956;border-radius:12px;padding:13px;font:inherit}input{flex:2;min-width:240px}select{flex:1;min-width:220px}.stats{color:#c7cee3;margin:10px 0 22px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}.card{background:#11172a;border:1px solid #28334f;border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:9px}.card:hover{border-color:#bc64d5}.tag{font-size:12px;color:#f7a9d9}.card h2{font-size:20px;margin:0}.card p{margin:0;flex:1}.access{font-size:12px;color:#9aa9d2}.card a{display:inline-block;text-decoration:none;background:#af3e9d;color:white;padding:10px 14px;border-radius:9px;font-weight:700;text-align:center;margin-top:8px}.card a:hover{background:#d44dba}footer{border-top:1px solid #29334b;margin-top:40px;padding:25px 0;color:#aab2c9;font-size:13px}code{color:#f5b8df}</style></head><body><main class="wrap"><header><div class="eyebrow">CODEWITHVAMP / OPEN SOURCE</div><h1>OSINT TOOLKIT</h1><p>Explore public-source intelligence tools for aviation, satellites, maps, maritime activity, cybersecurity research, and more. Each card links to the platform itself; this directory does not perform surveillance or collect data.</p></header><div class="controls"><input id="search" placeholder="Search tools, descriptions, categories…" aria-label="Search tools"><select id="category" aria-label="Filter by category"><option value="">All categories</option></select></div><div class="stats" id="stats"></div><section class="grid" id="results" aria-live="polite"></section><footer><strong>Responsible use:</strong> Access only data you are permitted to view, respect privacy and terms of service, and obtain authorization for security testing. Public availability does not imply permission for harassment, stalking, or intrusive surveillance. Tool availability and pricing may change. <a style="color:#ff89ce" href="RESPONSIBLE_USE.md">Read the policy</a>.</footer></main><script src="tools-data.js"></script><script>const tools=window.OSINT_TOOLS||[];const q=document.getElementById('search'),cat=document.getElementById('category'),out=document.getElementById('results'),stats=document.getElementById('stats');[...new Set(tools.map(t=>t.category))].sort().forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;cat.append(o)});function render(){const s=q.value.toLowerCase().trim(),c=cat.value;const filtered=tools.filter(t=>(!c||t.category===c)&&[t.name,t.description,t.category,t.access].join(' ').toLowerCase().includes(s));out.replaceChildren();stats.textContent=`Showing ${filtered.length} of ${tools.length} tools · ${new Set(tools.map(t=>t.category)).size} categories`;filtered.forEach(t=>{const card=document.createElement('article');card.className='card';const tag=document.createElement('div');tag.className='tag';tag.textContent=t.category;const title=document.createElement('h2');title.textContent=t.name;const desc=document.createElement('p');desc.textContent=t.description;const access=document.createElement('div');access.className='access';access.textContent='Access: '+t.access;const a=document.createElement('a');a.href=t.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Open official site ↗';card.append(tag,title,desc,access,a);out.append(card)})}q.addEventListener('input',render);cat.addEventListener('change',render);render();</script></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CodeWithVamp OSINT Toolkit - A free, searchable directory of open-source intelligence tools for cybersecurity research and digital investigations.">
+  <meta name="theme-color" content="#080b16">
+
+  <title>CodeWithVamp | OSINT Toolkit</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080b16;
+      --card: #11172a;
+      --border: #28334f;
+      --text: #eef1ff;
+      --muted: #aeb7d0;
+      --pink: #ff4caa;
+      --purple: #7f8cff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 15px system-ui, Segoe UI, Arial, sans-serif;
+    }
+
+    .wrap {
+      max-width: 1200px;
+      margin: auto;
+      padding: 36px 20px;
+    }
+
+    header {
+      padding: 30px 0 18px;
+    }
+
+    .eyebrow {
+      letter-spacing: .22em;
+      color: #ff67bd;
+      font-weight: 700;
+      font-size: 12px;
+    }
+
+    h1 {
+      font-size: clamp(34px, 5vw, 58px);
+      margin: 8px 0;
+      background: linear-gradient(
+        90deg,
+        var(--pink),
+        var(--purple)
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    p {
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .controls {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 25px 0 16px;
+    }
+
+    input,
+    select {
+      background: #141a30;
+      color: white;
+      border: 1px solid #303956;
+      border-radius: 12px;
+      padding: 14px;
+      font: inherit;
+    }
+
+    input {
+      flex: 2;
+      min-width: 240px;
+    }
+
+    select {
+      flex: 1;
+      min-width: 220px;
+    }
+
+    input:focus,
+    select:focus {
+      outline: 2px solid var(--purple);
+      outline-offset: 2px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 18px 0 24px;
+    }
+
+    .action-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      transition: .2s ease;
+    }
+
+    .download-btn {
+      background: #af3e9d;
+      color: white;
+    }
+
+    .download-btn:hover {
+      background: #d44dba;
+    }
+
+    .github-btn {
+      background: #171e33;
+      color: white;
+      border: 1px solid #37425f;
+    }
+
+    .github-btn:hover {
+      border-color: var(--purple);
+      background: #202944;
+    }
+
+    .stats {
+      color: #c7cee3;
+      margin: 12px 0 22px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: .2s ease;
+    }
+
+    .card:hover {
+      border-color: #bc64d5;
+      transform: translateY(-3px);
+    }
+
+    .tag {
+      font-size: 12px;
+      color: #f7a9d9;
+      font-weight: 600;
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .card p {
+      margin: 0;
+      flex: 1;
+    }
+
+    .access {
+      font-size: 12px;
+      color: #9aa9d2;
+    }
+
+    .card a {
+      display: inline-block;
+      text-decoration: none;
+      background: #af3e9d;
+      color: white;
+      padding: 11px 14px;
+      border-radius: 9px;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .card a:hover {
+      background: #d44dba;
+    }
+
+    .message {
+      padding: 22px;
+      border: 1px solid #303956;
+      border-radius: 12px;
+      color: #c7cee3;
+      background: #11172a;
+      grid-column: 1 / -1;
+      line-height: 1.6;
+    }
+
+    .error {
+      border-color: #b94b64;
+      color: #ffb6c6;
+    }
+
+    footer {
+      border-top: 1px solid #29334b;
+      margin-top: 40px;
+      padding: 25px 0;
+      color: #aab2c9;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    footer a {
+      color: #ff89ce;
+    }
+
+    .footer-brand {
+      margin-top: 15px;
+      font-weight: 700;
+      color: #eef1ff;
+    }
+
+    @media (max-width: 600px) {
+      .wrap {
+        padding: 20px 15px;
+      }
+
+      header {
+        padding-top: 15px;
+      }
+
+      .controls {
+        flex-direction: column;
+      }
+
+      input,
+      select {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .actions {
+        flex-direction: column;
+      }
+
+      .action-btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="wrap">
+
+    <header>
+      <div class="eyebrow">
+        CODEWITHVAMP / OPEN SOURCE
+      </div>
+
+      <h1>OSINT TOOLKIT</h1>
+
+      <p>
+        Discover publicly accessible Open-Source Intelligence
+        resources for aviation, satellites, maritime tracking,
+        public webcams, geolocation, cybersecurity research,
+        threat intelligence, and digital investigations.
+      </p>
+
+      <p>
+        Search, filter, explore, and access OSINT platforms
+        directly through their official websites.
+      </p>
+    </header>
+
+    <!-- Search and category filter -->
+
+    <div class="controls">
+
+      <input
+        id="search"
+        type="search"
+        placeholder="Search tools, descriptions, categories..."
+        aria-label="Search OSINT tools"
+      >
+
+      <select
+        id="category"
+        aria-label="Filter by category"
+      >
+        <option value="">All categories</option>
+      </select>
+
+    </div>
+
+    <!-- Download and GitHub buttons -->
+
+    <div class="actions">
+
+      <a
+        id="csvDownload"
+        class="action-btn download-btn"
+        href="./Data/tools.csv"
+        download="CodeWithVamp-OSINT-Toolkit.csv"
+      >
+        ⬇ Download OSINT Tools (CSV)
+      </a>
+
+      <a
+        class="action-btn github-btn"
+        href="https://github.com/codewithvamp/OSINT"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ★ View on GitHub
+      </a>
+
+      <a
+        class="action-btn github-btn"
+        href="https://github.com/codewithvamp/OSINT/issues/new"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        + Suggest a Tool
+      </a>
+
+    </div>
+
+    <!-- Tool count -->
+
+    <div
+      class="stats"
+      id="stats"
+      role="status"
+      aria-live="polite"
+    >
+      Loading OSINT tools...
+    </div>
+
+    <!-- Tool cards -->
+
+    <section
+      class="grid"
+      id="results"
+      aria-label="OSINT tools"
+    ></section>
+
+    <!-- Footer -->
+
+    <footer>
+
+      <strong>Responsible Use:</strong>
+
+      This directory is intended for education,
+      authorized security research, and legitimate
+      open-source intelligence investigations.
+
+      Access only information you are permitted to view.
+      Respect privacy, applicable laws, and platform
+      terms of service.
+
+      Public availability does not automatically
+      authorize intrusive surveillance, stalking,
+      harassment, or unauthorized access.
+
+      Tool availability, features, and pricing may change.
+
+      <p>
+        <a href="RESPONSIBLE_USE.md">
+          Read Responsible Use Policy
+        </a>
+        ·
+        <a href="https://github.com/codewithvamp/OSINT">
+          Contribute on GitHub
+        </a>
+      </p>
+
+      <div class="footer-brand">
+        CodeWithVamp
+      </div>
+
+      Stay curious... stay protected.
+
+    </footer>
+
+  </main>
+
+  <script>
+    "use strict";
+
+    let tools = [];
+
+    const search = document.getElementById("search");
+    const category = document.getElementById("category");
+    const results = document.getElementById("results");
+    const stats = document.getElementById("stats");
+    const csvDownload = document.getElementById("csvDownload");
+
+    const dataPaths = [
+      "./Data/tools.json",
+      "./data/tools.json"
+    ];
+
+    function showMessage(message, isError = false) {
+      results.replaceChildren();
+
+      const box = document.createElement("div");
+
+      box.className =
+        "message" + (isError ? " error" : "");
+
+      box.textContent = message;
+
+      results.appendChild(box);
+    }
+
+    function normalizeTools(data) {
+      let entries = [];
+
+      if (Array.isArray(data)) {
+        entries = data;
+      } else if (
+        data &&
+        Array.isArray(data.tools)
+      ) {
+        entries = data.tools;
+      } else if (
+        data &&
+        Array.isArray(data.resources)
+      ) {
+        entries = data.resources;
+      } else if (
+        data &&
+        typeof data === "object"
+      ) {
+        for (const [group, items] of Object.entries(data)) {
+          if (!Array.isArray(items)) continue;
+
+          entries.push(
+            ...items.map(item => ({
+              ...item,
+              category: item.category || group
+            }))
+          );
+        }
+      }
+
+      return entries
+        .filter(item =>
+          item &&
+          typeof item === "object"
+        )
+        .map(item => ({
+          name: String(
+            item.name || item.title || ""
+          ).trim(),
+
+          description: String(
+            item.description ||
+            item.desc ||
+            item.purpose ||
+            ""
+          ).trim(),
+
+          category: String(
+            item.category ||
+            item.group ||
+            "Other"
+          ).trim(),
+
+          access: String(
+            item.access ||
+            item.pricing ||
+            item.requirements ||
+            "Check official website"
+          ).trim(),
+
+          url: String(
+            item.url ||
+            item.link ||
+            item.website ||
+            ""
+          ).trim()
+        }))
+        .filter(item => {
+          if (!item.name) return false;
+
+          try {
+            const parsed = new URL(item.url);
+
+            return (
+              parsed.protocol === "https:" ||
+              parsed.protocol === "http:"
+            );
+          } catch {
+            return false;
+          }
+        });
+    }
+
+    function populateCategories() {
+      category.replaceChildren();
+
+      const defaultOption =
+        document.createElement("option");
+
+      defaultOption.value = "";
+      defaultOption.textContent = "All categories";
+
+      category.appendChild(defaultOption);
+
+      const categories = [
+        ...new Set(
+          tools.map(tool => tool.category)
+        )
+      ].sort();
+
+      categories.forEach(name => {
+        const option =
+          document.createElement("option");
+
+        option.value = name;
+        option.textContent = name;
+
+        category.appendChild(option);
+      });
+    }
+
+    function createCard(tool) {
+      const card = document.createElement("article");
+      card.className = "card";
+
+      const tag = document.createElement("div");
+      tag.className = "tag";
+      tag.textContent = tool.category;
+
+      const title = document.createElement("h2");
+      title.textContent = tool.name;
+
+      const description = document.createElement("p");
+      description.textContent = tool.description;
+
+      const access = document.createElement("div");
+      access.className = "access";
+      access.textContent = "Access: " + tool.access;
+
+      const link = document.createElement("a");
+      link.href = tool.url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.textContent = "Open official site ↗";
+
+      card.append(
+        tag,
+        title,
+        description,
+        access,
+        link
+      );
+
+      return card;
+    }
+
+    function render() {
+      const query = search.value.toLowerCase().trim();
+      const selectedCategory = category.value;
+
+      const filtered = tools.filter(tool => {
+        const matchesCategory =
+          !selectedCategory ||
+          tool.category === selectedCategory;
+
+        const searchableText = [
+          tool.name,
+          tool.description,
+          tool.category,
+          tool.access,
+          tool.url
+        ].join(" ").toLowerCase();
+
+        return (
+          matchesCategory &&
+          searchableText.includes(query)
+        );
+      });
+
+      const totalCategories = new Set(
+        tools.map(tool => tool.category)
+      ).size;
+
+      stats.textContent =
+        `Showing ${filtered.length} of ${tools.length} tools · ` +
+        `${totalCategories} categories`;
+
+      results.replaceChildren();
+
+      if (!filtered.length) {
+        showMessage(
+          "No matching tools found. Try another search or category."
+        );
+        return;
+      }
+
+      const fragment =
+        document.createDocumentFragment();
+
+      filtered.forEach(tool => {
+        fragment.appendChild(createCard(tool));
+      });
+
+      results.appendChild(fragment);
+    }
+
+    async function loadTools() {
+      let lastError = null;
+
+      for (const path of dataPaths) {
+        try {
+          const response = await fetch(path, {
+            cache: "no-store"
+          });
+
+          if (!response.ok) {
+            throw new Error(
+              `${path} returned HTTP ${response.status}`
+            );
+          }
+
+          const data = await response.json();
+          const loadedTools = normalizeTools(data);
+
+          if (!loadedTools.length) {
+            throw new Error(
+              `${path} contains no valid tool entries`
+            );
+          }
+
+          tools = loadedTools;
+
+          populateCategories();
+          render();
+
+          // Match the CSV folder to the JSON folder.
+          const folder = path.substring(
+            0,
+            path.lastIndexOf("/")
+          );
+
+          csvDownload.href = folder + "/tools.csv";
+
+          console.log(
+            `Loaded ${tools.length} tools from ${path}`
+          );
+
+          return;
+
+        } catch (error) {
+          lastError = error;
+
+          console.warn(
+            "Tool loading failed:",
+            error.message
+          );
+        }
+      }
+
+      stats.textContent =
+        "Unable to load OSINT tools";
+
+      showMessage(
+        "Could not load the OSINT database. " +
+        "Check whether Data/tools.json or data/tools.json " +
+        "exists in the repository. " +
+        "Details: " +
+        (lastError?.message || "Unknown error"),
+        true
+      );
+    }
+
+    search.addEventListener("input", render);
+
+    category.addEventListener("change", render);
+
+    loadTools();
+  </script>
+
+</body>
+</html>
