@@ -1,0 +1,956 @@
+[
+  {
+    "name": "Flightradar24",
+    "description": "Flight positions, routes and airport information",
+    "access": "Free tier; paid features",
+    "category": "Flight Tracking & Aviation",
+    "url": "https://www.flightradar24.com",
+    "id": "flightradar24",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "ADS-B Exchange",
+    "description": "Community-received ADS-B aircraft observations",
+    "access": "Public map; API may differ",
+    "category": "Flight Tracking & Aviation",
+    "url": "https://globe.adsbexchange.com",
+    "id": "ads-b-exchange",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "OpenSky Network",
+    "description": "Aviation observations and research datasets",
+    "access": "Account/API conditions",
+    "category": "Flight Tracking & Aviation",
+    "url": "https://opensky-network.org",
+    "id": "opensky-network",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "FlightAware",
+    "description": "Flight tracking, history and alerts",
+    "access": "Free tier; paid features",
+    "category": "Flight Tracking & Aviation",
+    "url": "https://www.flightaware.com",
+    "id": "flightaware",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "RadarBox",
+    "description": "Aircraft positions and flight monitoring",
+    "access": "Free tier; paid features",
+    "category": "Flight Tracking & Aviation",
+    "url": "https://www.radarbox.com",
+    "id": "radarbox",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "N2YO",
+    "description": "Orbital position estimates and satellite passes",
+    "access": "Public site; API limits",
+    "category": "Satellite Positions & Earth Imagery",
+    "url": "https://www.n2yo.com",
+    "id": "n2yo",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "CelesTrak",
+    "description": "Orbital element sets and satellite catalogs",
+    "access": "Public datasets",
+    "category": "Satellite Positions & Earth Imagery",
+    "url": "https://celestrak.org",
+    "id": "celestrak",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Heavens-Above",
+    "description": "Visible passes and satellite predictions",
+    "access": "Public site",
+    "category": "Satellite Positions & Earth Imagery",
+    "url": "https://www.heavens-above.com",
+    "id": "heavens-above",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Satflare",
+    "description": "Satellite tracking maps",
+    "access": "Public site",
+    "category": "Satellite Positions & Earth Imagery",
+    "url": "https://www.satflare.com",
+    "id": "satflare",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "NASA Worldview",
+    "description": "Browse Earth-observation imagery by date/layer",
+    "access": "Public site",
+    "category": "Satellite Positions & Earth Imagery",
+    "url": "https://worldview.earthdata.nasa.gov",
+    "id": "nasa-worldview",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Copernicus Browser",
+    "description": "Search and visualize Sentinel imagery",
+    "access": "Account may be needed",
+    "category": "Satellite Positions & Earth Imagery",
+    "url": "https://browser.dataspace.copernicus.eu",
+    "id": "copernicus-browser",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Sentinel Hub EO Browser",
+    "description": "Explore remote sensing datasets",
+    "access": "Account/plan conditions",
+    "category": "Satellite Positions & Earth Imagery",
+    "url": "https://apps.sentinel-hub.com/eo-browser",
+    "id": "sentinel-hub-eo-browser",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "MarineTraffic",
+    "description": "AIS vessel positions and port activity",
+    "access": "Free tier; paid features",
+    "category": "Maritime & Vessel Tracking",
+    "url": "https://www.marinetraffic.com",
+    "id": "marinetraffic",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "VesselFinder",
+    "description": "Ship positions and vessel profiles",
+    "access": "Free tier; paid features",
+    "category": "Maritime & Vessel Tracking",
+    "url": "https://www.vesselfinder.com",
+    "id": "vesselfinder",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "MyShipTracking",
+    "description": "AIS vessel tracking map",
+    "access": "Public site; limits",
+    "category": "Maritime & Vessel Tracking",
+    "url": "https://www.myshiptracking.com",
+    "id": "myshiptracking",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "FleetMon",
+    "description": "Ship movements and maritime analytics",
+    "access": "Free tier; paid features",
+    "category": "Maritime & Vessel Tracking",
+    "url": "https://www.fleetmon.com",
+    "id": "fleetmon",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "ShipXplorer",
+    "description": "Vessel tracking visualization",
+    "access": "Access/features vary",
+    "category": "Maritime & Vessel Tracking",
+    "url": "https://www.shipxplorer.com",
+    "id": "shipxplorer",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Global Fishing Watch",
+    "description": "Fishing activity patterns from vessel signals",
+    "access": "Public map; registration may apply",
+    "category": "Maritime & Vessel Tracking",
+    "url": "https://globalfishingwatch.org/map",
+    "id": "global-fishing-watch",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "EarthCam",
+    "description": "Public city and landmark webcams",
+    "access": "Public feeds; premium options",
+    "category": "Public Webcams & Traffic Cameras",
+    "url": "https://www.earthcam.com",
+    "id": "earthcam",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "SkylineWebcams",
+    "description": "Public webcams for cities, beaches and landmarks",
+    "access": "Public feeds",
+    "category": "Public Webcams & Traffic Cameras",
+    "url": "https://www.skylinewebcams.com",
+    "id": "skylinewebcams",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Windy Webcams",
+    "description": "Map of publicly shared webcams",
+    "access": "Public site",
+    "category": "Public Webcams & Traffic Cameras",
+    "url": "https://www.windy.com/webcams",
+    "id": "windy-webcams",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Webcamtaxi",
+    "description": "Directory of public live webcams",
+    "access": "Public site",
+    "category": "Public Webcams & Traffic Cameras",
+    "url": "https://www.webcamtaxi.com",
+    "id": "webcamtaxi",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "TrafficLand",
+    "description": "Traffic-camera network viewing",
+    "access": "Availability/rights vary",
+    "category": "Public Webcams & Traffic Cameras",
+    "url": "https://www.trafficland.com",
+    "id": "trafficland",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Caltrans QuickMap",
+    "description": "California highway camera and road data",
+    "access": "Public site",
+    "category": "Public Webcams & Traffic Cameras",
+    "url": "https://quickmap.dot.ca.gov",
+    "id": "caltrans-quickmap",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "TomTom Traffic Index",
+    "description": "City congestion statistics and traffic trends",
+    "access": "Public insights; commercial data",
+    "category": "Roads, Maps & Mobility",
+    "url": "https://www.tomtom.com/traffic-index/",
+    "id": "tomtom-traffic-index",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Waze Live Map",
+    "description": "Community-based road and traffic information",
+    "access": "Public map",
+    "category": "Roads, Maps & Mobility",
+    "url": "https://www.waze.com/live-map",
+    "id": "waze-live-map",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Google Maps",
+    "description": "Road maps, navigation and traffic overlays",
+    "access": "Public site; account optional",
+    "category": "Roads, Maps & Mobility",
+    "url": "https://www.google.com/maps",
+    "id": "google-maps",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "OpenStreetMap",
+    "description": "Community-maintained roads and geographic",
+    "access": "Open data; license applies features",
+    "category": "Roads, Maps & Mobility",
+    "url": "https://www.openstreetmap.org",
+    "id": "openstreetmap",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "HERE WeGo",
+    "description": "Mapping, directions and traffic where available",
+    "access": "Public site; account optional",
+    "category": "Roads, Maps & Mobility",
+    "url": "https://wego.here.com",
+    "id": "here-wego",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Overpass Turbo",
+    "description": "Query OpenStreetMap features",
+    "access": "Public service; fair-use limits",
+    "category": "Roads, Maps & Mobility",
+    "url": "https://overpass-turbo.eu",
+    "id": "overpass-turbo",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "NASA FIRMS",
+    "description": "Satellite-derived active fires and thermal",
+    "access": "Public site; downloads may anomalies require account",
+    "category": "Weather, Disasters & Environment",
+    "url": "https://firms.modaps.eosdis.nasa.gov/map/",
+    "id": "nasa-firms",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "USGS Earthquake Map",
+    "description": "Earthquake reports and event details",
+    "access": "Public site/API",
+    "category": "Weather, Disasters & Environment",
+    "url": "https://earthquake.usgs.gov/earthquakes/map/",
+    "id": "usgs-earthquake-map",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "GDACS",
+    "description": "International disaster alerts and event summaries",
+    "access": "Public site",
+    "category": "Weather, Disasters & Environment",
+    "url": "https://www.gdacs.org",
+    "id": "gdacs",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "NASA EONET",
+    "description": "Natural events and open API",
+    "access": "Public site/API",
+    "category": "Weather, Disasters & Environment",
+    "url": "https://eonet.gsfc.nasa.gov",
+    "id": "nasa-eonet",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Ventusky",
+    "description": "Weather model visualizations",
+    "access": "Free tier; paid features",
+    "category": "Weather, Disasters & Environment",
+    "url": "https://www.ventusky.com",
+    "id": "ventusky",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "RainViewer",
+    "description": "Rain radar maps and forecasts",
+    "access": "Free tier; paid features",
+    "category": "Weather, Disasters & Environment",
+    "url": "https://www.rainviewer.com",
+    "id": "rainviewer",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Blitzortung",
+    "description": "Community lightning detection network",
+    "access": "Public visualization",
+    "category": "Weather, Disasters & Environment",
+    "url": "https://www.blitzortung.org",
+    "id": "blitzortung",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "NOAA SWPC",
+    "description": "Space-weather forecasts and alerts",
+    "access": "Public site",
+    "category": "Weather, Disasters & Environment",
+    "url": "https://www.swpc.noaa.gov",
+    "id": "noaa-swpc",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "IQAir",
+    "description": "Air-quality monitoring and maps",
+    "access": "Public site; paid services",
+    "category": "Weather, Disasters & Environment",
+    "url": "https://www.iqair.com",
+    "id": "iqair",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Windy",
+    "description": "Weather layers, forecasts and models",
+    "access": "Free tier; paid features",
+    "category": "Weather, Disasters & Environment",
+    "url": "https://www.windy.com",
+    "id": "windy",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Google Earth",
+    "description": "Geographic context and imagery",
+    "access": "Public site",
+    "category": "Geolocation & Verification",
+    "url": "https://earth.google.com",
+    "id": "google-earth",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Bellingcat Toolkit",
+    "description": "Investigation and verification resource directory",
+    "access": "Public resource",
+    "category": "Geolocation & Verification",
+    "url": "https://bellingcat.gitbook.io/toolkit",
+    "id": "bellingcat-toolkit",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "SunCalc",
+    "description": "Sun position and shadow context",
+    "access": "Public site",
+    "category": "Geolocation & Verification",
+    "url": "https://www.suncalc.org",
+    "id": "suncalc",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Mapillary",
+    "description": "Crowdsourced street-level imagery",
+    "access": "Public browsing; account for some actions",
+    "category": "Geolocation & Verification",
+    "url": "https://www.mapillary.com",
+    "id": "mapillary",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "GeoNames",
+    "description": "Geographic names and coordinates",
+    "access": "Public site; API account",
+    "category": "Geolocation & Verification",
+    "url": "https://www.geonames.org",
+    "id": "geonames",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Wikimapia",
+    "description": "Collaborative place annotations",
+    "access": "Public site",
+    "category": "Geolocation & Verification",
+    "url": "https://wikimapia.org",
+    "id": "wikimapia",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "OpenStreetMap",
+    "description": "Road and landmark corroboration",
+    "access": "Public site",
+    "category": "Geolocation & Verification",
+    "url": "https://www.openstreetmap.org",
+    "id": "openstreetmap",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Wayback Machine",
+    "description": "Historical snapshots of websites",
+    "access": "Public site",
+    "category": "Web Archives & Search",
+    "url": "https://web.archive.org",
+    "id": "wayback-machine",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Common Crawl",
+    "description": "Large public web crawl datasets",
+    "access": "Open datasets",
+    "category": "Web Archives & Search",
+    "url": "https://commoncrawl.org",
+    "id": "common-crawl",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Google Search",
+    "description": "Indexed public webpages",
+    "access": "Public search",
+    "category": "Web Archives & Search",
+    "url": "https://www.google.com",
+    "id": "google-search",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Bing",
+    "description": "Search engine for corroboration",
+    "access": "Public search",
+    "category": "Web Archives & Search",
+    "url": "https://www.bing.com",
+    "id": "bing",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "PublicWWW",
+    "description": "Search public website source code",
+    "access": "Limited free; paid plans",
+    "category": "Web Archives & Search",
+    "url": "https://publicwww.com",
+    "id": "publicwww",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "BuiltWith",
+    "description": "Website technology profiling",
+    "access": "Limited free; paid plans",
+    "category": "Web Archives & Search",
+    "url": "https://builtwith.com",
+    "id": "builtwith",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "DNSDumpster",
+    "description": "DNS records and domain discovery",
+    "access": "Public lookup; limits",
+    "category": "Domains, Dns & Certificates",
+    "url": "https://dnsdumpster.com",
+    "id": "dnsdumpster",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "SecurityTrails",
+    "description": "DNS and domain intelligence",
+    "access": "Account/paid features",
+    "category": "Domains, Dns & Certificates",
+    "url": "https://securitytrails.com",
+    "id": "securitytrails",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "ICANN Lookup",
+    "description": "Registration data where available",
+    "access": "Public site",
+    "category": "Domains, Dns & Certificates",
+    "url": "https://lookup.icann.org",
+    "id": "icann-lookup",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "MXToolbox",
+    "description": "DNS, mail and domain diagnostics",
+    "access": "Free tools; paid features",
+    "category": "Domains, Dns & Certificates",
+    "url": "https://mxtoolbox.com",
+    "id": "mxtoolbox",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "RIPEstat",
+    "description": "IP address and routing information",
+    "access": "Public site/API",
+    "category": "Domains, Dns & Certificates",
+    "url": "https://stat.ripe.net",
+    "id": "ripestat",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Hurricane Electric BGP Toolkit",
+    "description": "Autonomous system and BGP context",
+    "access": "Public site",
+    "category": "Domains, Dns & Certificates",
+    "url": "https://bgp.he.net",
+    "id": "hurricane-electric-bgp-toolkit",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Shodan",
+    "description": "Indexed metadata for internet-facing services",
+    "access": "Account; paid search/API features",
+    "category": "Internet Exposure & Cyber Intelligence",
+    "url": "https://www.shodan.io",
+    "id": "shodan",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Censys",
+    "description": "Internet host and certificate intelligence",
+    "access": "Free tier; account/paid features",
+    "category": "Internet Exposure & Cyber Intelligence",
+    "url": "https://search.censys.io",
+    "id": "censys",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Netlas",
+    "description": "Internet asset and service search",
+    "access": "Free tier; paid features",
+    "category": "Internet Exposure & Cyber Intelligence",
+    "url": "https://netlas.io",
+    "id": "netlas",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "FOFA",
+    "description": "Internet-exposed asset indexing",
+    "access": "Account/paid features",
+    "category": "Internet Exposure & Cyber Intelligence",
+    "url": "https://fofa.info",
+    "id": "fofa",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "VirusTotal",
+    "description": "File, URL, domain and IP reputation context",
+    "access": "Free tier; API limits",
+    "category": "Internet Exposure & Cyber Intelligence",
+    "url": "https://www.virustotal.com",
+    "id": "virustotal",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "AlienVault OTX",
+    "description": "Shared threat indicators and pulses",
+    "access": "Public/account features",
+    "category": "Internet Exposure & Cyber Intelligence",
+    "url": "https://otx.alienvault.com",
+    "id": "alienvault-otx",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "AbuseIPDB",
+    "description": "Community-reported abusive IP context",
+    "access": "Free tier; API limits",
+    "category": "Internet Exposure & Cyber Intelligence",
+    "url": "https://www.abuseipdb.com",
+    "id": "abuseipdb",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "GreyNoise",
+    "description": "Internet scanning/noise intelligence",
+    "access": "Community tier; paid features",
+    "category": "Internet Exposure & Cyber Intelligence",
+    "url": "https://www.greynoise.io",
+    "id": "greynoise",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Pulsedive",
+    "description": "Threat indicators and enrichment",
+    "access": "Free tier; paid features",
+    "category": "Internet Exposure & Cyber Intelligence",
+    "url": "https://pulsedive.com",
+    "id": "pulsedive",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "GitHub Code Search",
+    "description": "Public repository and code search",
+    "access": "Account/feature conditions",
+    "category": "Code, Packages & Developer Footprint",
+    "url": "https://github.com/search",
+    "id": "github-code-search",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "GitLab",
+    "description": "Discover public projects",
+    "access": "Public browsing",
+    "category": "Code, Packages & Developer Footprint",
+    "url": "https://gitlab.com/explore",
+    "id": "gitlab",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "OSV",
+    "description": "Open-source vulnerability database",
+    "access": "Public site/API",
+    "category": "Code, Packages & Developer Footprint",
+    "url": "https://osv.dev",
+    "id": "osv",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "npm",
+    "description": "JavaScript package metadata",
+    "access": "Public site",
+    "category": "Code, Packages & Developer Footprint",
+    "url": "https://www.npmjs.com",
+    "id": "npm",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "ExifTool",
+    "description": "Read file metadata locally",
+    "access": "Free open-source tool",
+    "category": "Images, Video & Metadata",
+    "url": "https://exiftool.org",
+    "id": "exiftool",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "TinEye",
+    "description": "Reverse image search",
+    "access": "Public searches; paid API",
+    "category": "Images, Video & Metadata",
+    "url": "https://tineye.com",
+    "id": "tineye",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Google Lens",
+    "description": "Visual search and image matching",
+    "access": "Public service",
+    "category": "Images, Video & Metadata",
+    "url": "https://lens.google",
+    "id": "google-lens",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "InVID-WeVerify",
+    "description": "Video and image verification workflows",
+    "access": "Free plugin; availability varies",
+    "category": "Images, Video & Metadata",
+    "url": "https://www.invid-project.eu/tools-and-services/invid-verification-plugin/",
+    "id": "invid-weverify",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "FotoForensics",
+    "description": "Image forensic visualization",
+    "access": "Public service; usage rules",
+    "category": "Images, Video & Metadata",
+    "url": "https://fotoforensics.com",
+    "id": "fotoforensics",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Metadata2Go",
+    "description": "Online file metadata inspection",
+    "access": "Free tier; upload privacy caution",
+    "category": "Images, Video & Metadata",
+    "url": "https://www.metadata2go.com",
+    "id": "metadata2go",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Sherlock",
+    "description": "Check username presence across public platforms",
+    "access": "Free open-source tool",
+    "category": "Usernames, Social & People Search",
+    "url": "https://github.com/sherlock-project/sherlock",
+    "id": "sherlock",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "WhatsMyName",
+    "description": "Username lookup across websites",
+    "access": "Public service",
+    "category": "Usernames, Social & People Search",
+    "url": "https://whatsmyname.app",
+    "id": "whatsmyname",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Namechk",
+    "description": "Username and domain availability",
+    "access": "Public service",
+    "category": "Usernames, Social & People Search",
+    "url": "https://namechk.com",
+    "id": "namechk",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Social Searcher",
+    "description": "Search public social content",
+    "access": "Free tier; paid features",
+    "category": "Usernames, Social & People Search",
+    "url": "https://www.social-searcher.com",
+    "id": "social-searcher",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Mastodon",
+    "description": "Discover public federated profiles",
+    "access": "Public platform; account optional",
+    "category": "Usernames, Social & People Search",
+    "url": "https://joinmastodon.org",
+    "id": "mastodon",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Have I Been Pwned",
+    "description": "Check known breach exposure for owned email",
+    "access": "Public checks; API paid addresses",
+    "category": "Email, Organizations & Breach Awareness",
+    "url": "https://haveibeenpwned.com",
+    "id": "have-i-been-pwned",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Hunter",
+    "description": "Professional email/domain discovery",
+    "access": "Account; limited free tier",
+    "category": "Email, Organizations & Breach Awareness",
+    "url": "https://hunter.io",
+    "id": "hunter",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Emailrep",
+    "description": "Email address reputation signals",
+    "access": "Public/paid API conditions",
+    "category": "Email, Organizations & Breach Awareness",
+    "url": "https://emailrep.io",
+    "id": "emailrep",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "OpenCorporates",
+    "description": "Company registry aggregation",
+    "access": "Free search; paid data",
+    "category": "Email, Organizations & Breach Awareness",
+    "url": "https://opencorporates.com",
+    "id": "opencorporates",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "SEC EDGAR",
+    "description": "US company regulatory filings",
+    "access": "Public site",
+    "category": "Email, Organizations & Breach Awareness",
+    "url": "https://www.sec.gov/edgar/search/",
+    "id": "sec-edgar",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "GLEIF",
+    "description": "Legal entity identifier records",
+    "access": "Public site",
+    "category": "Email, Organizations & Breach Awareness",
+    "url": "https://search.gleif.org",
+    "id": "gleif",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "OSINT Framework",
+    "description": "Directory of OSINT resources by topic",
+    "access": "Public resource",
+    "category": "Osint Workflows & Learning",
+    "url": "https://osintframework.com",
+    "id": "osint-framework",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Bellingcat Toolkit",
+    "description": "Verification and investigation resources",
+    "access": "Public resource",
+    "category": "Osint Workflows & Learning",
+    "url": "https://bellingcat.gitbook.io/toolkit",
+    "id": "bellingcat-toolkit",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Maltego",
+    "description": "Link analysis and entity relationships",
+    "access": "Account; paid/community editions",
+    "category": "Osint Workflows & Learning",
+    "url": "https://www.maltego.com",
+    "id": "maltego",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "SpiderFoot",
+    "description": "Automated OSINT collection and correlation",
+    "access": "Open-source; self-hosted",
+    "category": "Osint Workflows & Learning",
+    "url": "https://github.com/smicallef/spiderfoot",
+    "id": "spiderfoot",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Recon-ng",
+    "description": "Modular reconnaissance framework",
+    "access": "Open-source; external API keys may be needed",
+    "category": "Osint Workflows & Learning",
+    "url": "https://github.com/lanmaster53/recon-ng",
+    "id": "recon-ng",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "theHarvester",
+    "description": "Collect public emails, domains and hosts",
+    "access": "Open-source; source/API limits",
+    "category": "Osint Workflows & Learning",
+    "url": "https://github.com/laramies/theHarvester",
+    "id": "theharvester",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Airplanes.live",
+    "description": "Community-sourced aircraft tracking",
+    "access": "Public map",
+    "category": "Flight Tracking & Aviation",
+    "url": "https://globe.airplanes.live",
+    "id": "airplanes.live",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "ADSB.lol",
+    "description": "Open aircraft tracking visualization",
+    "access": "Public map",
+    "category": "Flight Tracking & Aviation",
+    "url": "https://globe.adsb.lol",
+    "id": "adsb.lol",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Zoom Earth",
+    "description": "Satellite weather imagery and storm tracking",
+    "access": "Public site",
+    "category": "Satellite Positions & Earth Imagery",
+    "url": "https://zoom.earth",
+    "id": "zoom-earth",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "NASA Eyes",
+    "description": "Interactive solar system and Earth visualizations",
+    "access": "Public site",
+    "category": "Satellite Positions & Earth Imagery",
+    "url": "https://eyes.nasa.gov",
+    "id": "nasa-eyes",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Zoom Earth",
+    "description": "Weather satellite and storm views",
+    "access": "Public site",
+    "category": "Weather, Disasters & Environment",
+    "url": "https://zoom.earth",
+    "id": "zoom-earth",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "urlscan.io",
+    "description": "Web scan metadata and public submissions",
+    "access": "Free tier; API/account limits",
+    "category": "Web Archives & Search",
+    "url": "https://urlscan.io",
+    "id": "urlscan.io",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "crt.sh",
+    "description": "Certificate transparency search",
+    "access": "Public search",
+    "category": "Domains, Dns & Certificates",
+    "url": "https://crt.sh",
+    "id": "crt.sh",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "ViewDNS.info",
+    "description": "DNS, reverse IP and domain utilities",
+    "access": "Free tools; limits",
+    "category": "Domains, Dns & Certificates",
+    "url": "https://viewdns.info",
+    "id": "viewdns.info",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "grep.app",
+    "description": "Search indexed public code",
+    "access": "Public search",
+    "category": "Code, Packages & Developer Footprint",
+    "url": "https://grep.app",
+    "id": "grep.app",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "Libraries.io",
+    "description": "Open-source package and dependency metadata",
+    "access": "Public site/API limits",
+    "category": "Code, Packages & Developer Footprint",
+    "url": "https://libraries.io",
+    "id": "libraries.io",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  },
+  {
+    "name": "deps.dev",
+    "description": "Software package and dependency insights",
+    "access": "Public site/API",
+    "category": "Code, Packages & Developer Footprint",
+    "url": "https://deps.dev",
+    "id": "deps.dev",
+    "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
+  }
+]
