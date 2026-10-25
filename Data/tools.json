@@ -612,6 +612,15 @@
     "responsible_use": "Use only lawfully accessible information; verify source terms, accuracy, and privacy implications."
   },
   {
+    "name": "ICHI Internet Cyber Health Index",
+    "description": "Daily barometer of internet cyber health aggregating 90+ threat intelligence, internet noise, and security feed sources into a single index",
+    "access": "Public site; free",
+    "category": "Internet Exposure & Cyber Intelligence",
+    "url": "https://ichi.global",
+    "id": "ichi-internet-cyber-health-index",
+    "responsible_use": "Interpret as an outside-in directional signal of broad internet threat conditions; supplement with source-specific context and internal telemetry; not a substitute for organization-specific risk assessment."
+  },
+  {
     "name": "GitHub Code Search",
     "description": "Public repository and code search",
     "access": "Account/feature conditions",
