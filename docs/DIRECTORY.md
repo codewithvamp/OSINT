@@ -130,6 +130,7 @@ Access labels are indicative. Visit providers for current access, licensing, and
 | [AbuseIPDB](https://www.abuseipdb.com) | Community-reported abusive IP context | Free tier; API limits |
 | [GreyNoise](https://www.greynoise.io) | Internet scanning/noise intelligence | Community tier; paid features |
 | [Pulsedive](https://pulsedive.com) | Threat indicators and enrichment | Free tier; paid features |
+| [ICHI Internet Cyber Health Index](https://ichi.global) | Daily barometer of internet cyber health aggregating 90+ threat intelligence, internet noise, and security feed sources into a single index | Public site; free |
 
 ## Code, Packages & Developer Footprint
 
